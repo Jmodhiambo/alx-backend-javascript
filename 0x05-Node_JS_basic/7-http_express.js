@@ -45,18 +45,16 @@ function countStudents(path) {
 
 // Route for "/"
 app.get('/', (req, res) => {
-  res.send('Hello ALX!');
+  res.send('Hello Holberton School!');
 });
 
 // Route for "/students"
 app.get('/students', async (req, res) => {
-  res.write('This is the list of our students\n');
-
   try {
     const studentData = await countStudents(databasePath);
-    res.end(studentData);
+    res.send(`This is the list of our students\n${studentData}`);
   } catch (error) {
-    res.end(error.message);
+    res.send(error.message);
   }
 });
 

@@ -50,11 +50,13 @@ app.get('/', (req, res) => {
 
 // Route for "/students"
 app.get('/students', async (req, res) => {
+  res.write('This is the list of our students\n');
+
   try {
     const studentData = await countStudents(databasePath);
-    res.send(`This is the list of our students\n${studentData}`);
+    res.end(studentData);
   } catch (error) {
-    res.send(error.message);
+    res.end(error.message);
   }
 });
 

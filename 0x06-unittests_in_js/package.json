@@ -17,5 +17,7 @@
     "jest": "^24.9.0",
     "mocha": "^8.4.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chai": "^4.3.7"
+  }
 }

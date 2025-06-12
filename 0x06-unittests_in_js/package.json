@@ -1,0 +1,24 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Readme file for 0x06-unittests_in_js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/node": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^22.21.0",
+    "jest": "^24.9.0",
+    "mocha": "^8.4.0"
+  },
+  "dependencies": {}
+}
